@@ -1,5 +1,7 @@
 # Bullpen MCP server
 
+[![mcptry](https://mcptry.com/badge/sale.bullpen/bullpen)](https://mcptry.com/servers/sale.bullpen/bullpen)
+
 **Bullpen is an AI sales team that works the phone.** A crew of AI callers, each with its own number and voice, gets through phone trees, hold queues and AI receptionists to a real person, then drops your rep into the live call. Every call writes to Salesforce. Herman, the manager agent, runs the whole bullpen in plain language and asks before anything leaves the building.
 
 This repository documents Bullpen's remote MCP server. There is nothing to install or host: the server runs at
