@@ -3,12 +3,28 @@
   "name": "sale.bullpen/bullpen",
   "title": "Bullpen",
   "description": "AI sales team that works the phone: gets a real person on the line. Agents sign up by paying (MPP).",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "websiteUrl": "https://bullpen.sale",
   "repository": {
     "url": "https://github.com/GreatPyreneseDad/bullpen-mcp",
     "source": "github"
   },
+  "icons": [
+    {
+      "src": "https://bullpen.sale/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://bullpen.sale/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
