@@ -57,8 +57,22 @@ Authorization: Bearer bp_live_...
 | `floor_state` | yes | Live and recent crew calls |
 | `create_campaign` / `import_campaign_contacts` / `work_campaign` | yes | Run a calling campaign from a CSV |
 | `watch_companies` | yes | Watch companies for buying and risk signals |
+| `onboarding_status` | yes | What's left before every feature works, in order, with the tool or link for each |
+| `turn_on_herman` | yes | Switch Herman on |
+| `get_outbound_agreement` / `accept_outbound_agreement` | yes | Read the compliance agreement; accept with the person's typed name, only after they agree |
+| `search_numbers` / `buy_number` | yes | Find a line and buy it from credits ($3/month); a crew member goes on it |
+| `hire_crew` | yes | Put AI crew members on any free lines |
+| `set_mobile` | yes | The phone that rings when the crew reaches a person (yours, or a teammate's) |
+| `buy_credits` | yes | Card checkout link for credits |
+| `connect_salesforce` / `connect_google` | yes | Approval links the person opens |
+| `invite_teammate` / `list_team` | yes | Invite by email; see members and pending invites |
+| `open_page` | no | Links into the app, including `floor` to watch live calls |
 
 Every tool carries a `title` and `readOnlyHint` / `destructiveHint` / `openWorldHint` annotations.
+
+## Onboard from your agent
+
+Your agent can take a new workspace all the way to live calls. Ask it to run `onboarding_status` and work the list: switch Herman on, read you the compliance agreement and record your yes, buy a crew line from credits, set your mobile, invite your team. It hands you links for the few steps that happen in your browser (card checkout, Salesforce and Google approval) and a link to the live floor whenever you want to watch.
 
 ## Agents can hire a bullpen
 
@@ -86,7 +100,7 @@ Payable endpoints are described with `x-payment-info` in [bullpen.sale/openapi.j
 
 ## Pricing
 
-Usage-based, prepaid credits: $0.30 per crew minute, $5 per human reached, $0.03 per text, $3/month per number. New workspaces start with $10. Spending tools return a 402 error at zero. Full table: [bullpen.sale/pricing](https://bullpen.sale/pricing).
+Usage-based, prepaid credits: $0.30 per crew minute (no extra charge for reaching a human), $0.03 per text, $3/month per number. New workspaces start with $10. Spending tools return a 402 error at zero. Full table: [bullpen.sale/pricing](https://bullpen.sale/pricing).
 
 ## Other ways in
 
