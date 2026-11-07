@@ -64,6 +64,9 @@ Authorization: Bearer bp_live_...
 | `get_outbound_agreement` / `accept_outbound_agreement` | yes | Read the compliance agreement; accept with the person's typed name, only after they agree |
 | `search_numbers` / `buy_number` | yes | Find a line and buy it from credits ($3/month); a crew member goes on it |
 | `hire_crew` | yes | Put AI crew members on any free lines |
+| `get_team_profile` / `draft_team_profile` / `set_team_profile` | yes | Teach the crew who they work for: name as spoken, product names, tone, house rules, the knock line (drafted from the website; admin saves) |
+| `set_campaign_customs` | yes | Make one campaign sound different from the team default |
+| `rename_crew_member` | yes | Rename a crew member for your culture or region (paid workspaces) |
 | `set_mobile` | yes | The phone that rings when the crew reaches a person (yours, or a teammate's) |
 | `buy_credits` | yes | Card checkout link for credits |
 | `connect_salesforce` / `connect_google` | yes | Approval links the person opens |
@@ -74,7 +77,7 @@ Every tool carries a `title` and `readOnlyHint` / `destructiveHint` / `openWorld
 
 ## Onboard from your agent
 
-Your agent can take a new workspace all the way to live calls. Ask it to run `onboarding_status` and work the list: switch Herman on, read you the compliance agreement and record your yes, buy a crew line from credits, set your mobile, invite your team. It hands you links for the few steps that happen in your browser (card checkout, Salesforce and Google approval) and a link to the live floor whenever you want to watch.
+Your agent can take a new workspace all the way to live calls. Ask it to run `onboarding_status` and work the list: switch Herman on, read you the compliance agreement and record your yes, buy a crew line from credits, set your mobile, teach the crew who they work for (drafted from your website, saved only when you approve), invite your team. It hands you links for the few steps that happen in your browser (card checkout, Salesforce and Google approval) and a link to the live floor whenever you want to watch.
 
 ## Agents can hire a bullpen
 
